@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uv | 极速 Python 包与项目管理器</title>
+    <meta
+      name="description"
+      content="uv 是用 Rust 编写的极速 Python 包与项目管理器，统一依赖、项目、脚本、工具与 Python 版本管理，比 pip 快 10 到 100 倍。"
+    />
+    <meta name="theme-color" content="#121310" />
+    <meta property="og:title" content="uv | 极速 Python 包与项目管理器" />
+    <meta
+      property="og:description"
+      content="一个工具替代 pip、pip-tools、pipx、poetry、pyenv、twine 与 virtualenv。"
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("uv-theme");
+          var theme =
+            stored ||
+            (window.matchMedia("(prefers-color-scheme: dark)").matches
+              ? "dark"
+              : "light");
+          document.documentElement.dataset.theme = theme;
+          document.documentElement.style.colorScheme = theme;
+        } catch (error) {
+          document.documentElement.dataset.theme = "light";
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
